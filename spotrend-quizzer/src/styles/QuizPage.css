@@ -1,0 +1,113 @@
+/* Contenu principal du quiz */
+.quiz-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: auto;
+}
+
+.quiz-content h1 {
+    font-size: 3.5rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #03945a;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-content p {
+    font-size: 2rem;
+    color: white;
+}
+
+.question-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.question-title{
+    font-size: 1.5rem; 
+    color: #fff; 
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #fff; 
+    border-radius: 20px; 
+    display: inline-block; 
+}
+
+
+.choices-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    margin-bottom: 40px;
+}
+
+.choice-button {
+    padding: 15px 30px;
+    margin: 2px;
+    border-radius: 30px;
+    border: none;
+    background-color: #1db954;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.choice-button.correct {
+    background-color: #31f500;
+}
+
+.choice-button.incorrect {
+    background-color: #e63946;
+}
+
+.next-question-button {
+    padding: 10px 20px;
+    background-color: #1db954;
+    margin: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.dot.active {
+    background-color: #1db954;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .quiz-content {
+        padding: 10px;
+        max-width: 90%;
+    }
+}

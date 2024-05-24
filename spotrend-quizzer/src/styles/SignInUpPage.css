@@ -1,0 +1,106 @@
+.signInUpPage {
+    background-color: #191414;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* centrer sur la page */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Responsive design for mobile devices */
+  @media (max-width: 768px) {
+    .signInUpPage {
+        padding: 10px;
+        max-width: 90%;
+    }
+  }
+  
+  .signInUpPage h1 {
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .signInUpPage form {
+    width: 100%;
+  }
+  
+  .signInUpPage label {
+    display: block;
+    margin-bottom: .5rem;
+    color: #b3b3b3;
+  }
+  
+  .signInUpPage input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #282828;
+    background-color: #292727;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .signInUpPage input::placeholder {
+    color: #b3b3b3;
+  }
+  
+  .signInUpPage button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    background-color: #1db954;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signInUpPage button:hover {
+    background-color: #1ed760;
+  }
+  
+  .signInUpPage button:active {
+    transform: scale(0.96);
+  }
+  
+  .signInUpPage a {
+    color: #1db954;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  
+  .signInUpPage a:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-10deg);
+    transform-origin: top left;
+    margin-left: -50px; /* push gauche */
+    margin-top: -10px; /* push up*/
+}
+
+.logoNotConnected{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+
+  

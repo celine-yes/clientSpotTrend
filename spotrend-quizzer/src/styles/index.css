@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background-color: #363636;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Styles pour les pages principales */
+
+.main-page, .profile-page, .quiz-page, .result-page{
+  display: flex;
+  min-height: 100vh; 
+  color: #fff;
+  background: linear-gradient(to bottom, #011f12 0%, #121212 100%);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+
+/* Styles pour la barre latérale */
+.sidebar {
+  background-color: #0a0f0b;
+  color: white; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-logo, .user-icon, .logout-icon  {
+border: 2px solid white;
+border-radius: 50%;
+width: 80px; 
+height: 80px;
+} 
+
+.logo-container {
+  padding: 20px;
+}
+
+.user-logout-container {
+  align-self: stretch;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logout-icon {
+  margin-top: 20px; 
+  cursor: pointer;
+}
+
+/* Tables pour l'historique et le classement */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    color: white;
+  }
+  
+td {
+    background-color: #1f201f; 
+  }
+
+/*button design*/
+.btn {
+  background-color: #1db954; 
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  text-transform: uppercase;
+  padding: 15px 30px; 
+  margin: 15px; 
+  border-radius: 50px; 
+  font-size: 1.2rem; 
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+  display: block; 
+  max-width: 250px; 
+  text-align: center;
+}
+
+.button-box {
+background-color: #191414; 
+padding: 30px;
+border-radius: 25px;
+}

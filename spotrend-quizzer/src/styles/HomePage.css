@@ -1,0 +1,95 @@
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #03945a;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+        max-width: 90%;
+    }
+}
+.outer-box {
+    background-color: #191414;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* centrer sur la page */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+/* Styles for the ranking table */
+  
+  th {
+    background-color: #03945a;
+    color: #ffffff;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+/* Styles for the start quiz button */
+.start-quiz-button {
+    background-color: #03945a;
+    color: #fff;
+    border: none;
+    border-radius: 500px;
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 50px;
+}
+
+.start-quiz-button:hover {
+    background-color: #026532;
+}
+
+.start-quiz-button:active {
+    transform: scale(0.96);
+} 
+
+.logoAccueil{
+  max-width: 100px;
+  max-height: 100px;
+}

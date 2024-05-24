@@ -1,0 +1,42 @@
+
+.content-profile {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.content-profile h1 {
+  font-size: 2.5rem;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #03945a;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 1px;
+  border-bottom: 2px solid #03945a;
+}
+
+.content-profile h2 {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .content-profile {
+      padding: 10px;
+      max-width: 90%;
+  }
+}
+
+
+  
