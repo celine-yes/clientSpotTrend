@@ -25,6 +25,7 @@ function QuizPage() {
  
   useEffect(() => {
      if (isMounted && questionCount === 0) {
+      fetchQuestion(); 
      }
   }, [isMounted, questionCount]);
   
