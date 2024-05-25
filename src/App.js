@@ -10,7 +10,7 @@ import QuizPage from './QuizPage';
 import ResultsPage from './ResultPage';
 import ProfilePage from './ProfilePage';
 
-export const apiUrl = "https://serveurspottrend-production.up.railway.app";
+export const apiUrl = "https://serveur-spottrend-1.onrender.com";
 
 function App() {
   return (
