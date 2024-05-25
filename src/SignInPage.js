@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles/SignInUpPage.css';
 import logo from './logo.svg'; 
+import { apiUrl } from './App';
 
 function SignInPage() {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ function SignInPage() {
   };
 
   async function signIn(pseudo, password) {
-    const response = await fetch('http://localhost:8080/signin', {
+    const response = await fetch(`${apiUrl}/signin`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

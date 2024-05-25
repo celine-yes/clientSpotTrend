@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles/SignInUpPage.css';
 import logo from './logo.svg'; 
+import { apiUrl } from './App';
 
 function SignUpPage() {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ function SignUpPage() {
 };
 
   async function signUp(pseudo, password) {
-    const response = await fetch('http://localhost:8080/signup', {
+    const response = await fetch(`${apiUrl}/signup`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

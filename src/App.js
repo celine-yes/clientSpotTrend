@@ -10,6 +10,8 @@ import QuizPage from './QuizPage';
 import ResultsPage from './ResultPage';
 import ProfilePage from './ProfilePage';
 
+export const apiUrl = "https://serveurspottrend-production.up.railway.app";
+
 function App() {
   return (
     <Router>

@@ -4,7 +4,9 @@ import logo from './logo.svg';
 import userIcon from './user.svg';
 import logoutIcon from './logout.png';
 import './styles/ProfilePage.css';
+import { apiUrl } from './App';
 
+import { apiUrl } from './App';
 
 function ProfilePage() {
   const [userInfo, setUserInfo] = useState(null);
@@ -25,7 +27,7 @@ function ProfilePage() {
 
       try {
         console.log(`profile ${token}`);
-        const response = await fetch('http://localhost:8080/userinfo', {
+        const response = await fetch(`${apiUrl}/userinfo`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
